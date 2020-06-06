@@ -1,0 +1,5 @@
+# How statistical inference is relevant to data science?
+
+Statistial inference is about making use of data we obtained on a sample of a population to get more information on the whole population. For example, we may be interested in understanding the effect of a change in website design on conversion rate for all our users. So we ran a test on some of our users, where half of them saw the old page and half of them saw the new page. The result shows that the new page indeed led to higher conversion rate! But wait, we only tested on a relatively small set of our users. Would the result still be the same for other users? We are not sure. There is still a lot of uncertainty.
+
+Here statistical inference comes to our rescue and would allow us to draw conclusions based on that data. It helps us estimate the sample to sample variation and gives us a range of values for the statistics in the whole population, when we don't have much data. 
