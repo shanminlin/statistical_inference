@@ -1,4 +1,6 @@
-# How statistical inference is relevant to data science?
+# How statistical inference is relevant to business?
+In this project I want to share the essential part in data analysis during my phd -- hypothesis testing.
+
 Say we want to make a change to our website design to improve conversion rate for all our users. So we ran a test on some of our users, where half of them saw the old page and half of them saw the new page. After we collected data on a number of users, we found that the new page indeed led to higher conversion rate! But wait, we only tested on a relatively small set of our users. Would the result still be the same for other users? We are not sure. There is still a lot of uncertainty.
 
 Here statistical inference comes to our rescue and would allow us to draw some conclusions based on that data. The method is called hypothesis testing or AB test.
@@ -16,7 +18,7 @@ Plot the distribution of these 10000 differences. This is called sampling distri
 Now we need to compare our current difference with all these 10000 differences. Below shows two examples.
 
 <img src='output_images/not_significant_diff.png'>
-The above example shows that there are about 10% of simulated values that are equal or larger than our current result. This implies that the probability to obtain our current result or even larger differences due to natural variation is about 10%. This is pretty high, given that the common threshold is 1% or 5%. So the current conversion rate change in our sample is not statistically significant.
+The above example shows that there are about 10% of simulated values that are equal or larger than our current result. (By the way, this value is called p-value). This implies that the probability to obtain our current result or even larger differences due to natural variation is about 10%. This is pretty high, given that the common threshold is 1% or 5%. So the current conversion rate change in our sample is not statistically significant.
 
 <img src='output_images/with_diff.png'>
 The above example shows that no simulated values are equal or larger than our current result. So it is unlikely to obtain our current result due to natural variation or chance. So the current difference in conversion rate is statistically significant.
